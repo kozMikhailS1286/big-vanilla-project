@@ -1,4 +1,5 @@
-function increaseAge(u: UserType) {
+import { user } from "./09_01";
+export function increaseAge(u: UserType) {
     u.age++;
 }
 
@@ -58,7 +59,7 @@ test('value type test', () => {
 
     adminsCount = adminsCount + 1;
 
-    expect(users[2]).toEqual({name: 'Bandyugan', age: 10})
+    expect(adminsCount).toEqual(101)
 })
 
 
