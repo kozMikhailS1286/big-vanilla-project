@@ -47,11 +47,15 @@ test("get banknote list", ()=> {
     // надо бы проверять длинну резалтов и их сумму
     const result2500 = getBanknoteList(2500)
     const result23 = getBanknoteList(23)
+    const result156 = getBanknoteList(156)
     expect(result2500[0]).toBe(1000)
     expect(result2500[1]).toBe(1000)
     expect(result2500[2]).toBe(500)
     expect(result23[0]).toBe(20)
     expect(result23[1]).toBe(2)
     expect(result23[2]).toBe(1)
-
+    expect(result156[0]).toBe(100)
+    expect(result156[1]).toBe(50)
+    expect(result156[2]).toBe(5)
+    expect(result156[3]).toBe(1)
 })
